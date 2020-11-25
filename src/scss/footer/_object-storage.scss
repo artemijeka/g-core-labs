@@ -31,7 +31,7 @@
         display: flex;
         justify-content: space-between;
         &-item {
-            animation: slide-in-blurred-top 1200ms ease-in-out both;
+          animation: roll-in-blurred-right 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
             margin: 0;
             position: relative;
             cursor: pointer;
