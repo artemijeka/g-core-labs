@@ -1,50 +1,65 @@
 $(function () {
 
- function slickify() {
-  $('.object-storage__carousel').slick({
-   responsive: [
-    {
-     breakpoint: 10000,
-     settings: "unslick"
-    },
-    {
-     breakpoint: 1000,
-     settings: {
+  function slickify() {
+    $('.object-storage__carousel').slick({
       dots: false,
       infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      speed: 300,
-     }
-    }
-   ]
-  });
- }
-
- function addSlides() {
-  let children = $('.object-storage__carousel').children();
-  console.log(children);
- }
- // function deslickify() {
-  //  $('.object-storage__carousel').slick({
-   //   settings: "unslick"
-   //  });
-   // }
-   
-   
-   
-   addSlides();
-   slickify();
-
- $(window).resize(function () {
-  if ( $(window).width() <= 1000 ) {
-   addSlides();
-   slickify();
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerMode: true,
+      variableWidth: true,
+      speed: 500,
+      responsive: [
+        {
+          breakpoint: 500,
+          settings: {
+            dots: false,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            variableWidth: true,
+            speed: 500,
+          }
+        }
+      ]
+    });
   }
-  // else {
-  //  deslickify();
-  // }
- });
+
+  function unSlickify() {
+    $('.object-storage__carousel').slick('unslick');
+    
+    $('.object-storage__carousel').slick({
+      settings: 'unslick',
+    });
+    
+    $('.object-storage__carousel').slick({
+      responsive: [
+        {
+          breakpoint: 500,
+          settings: 'unslick'
+        }
+      ]
+    });
+  }
+
+
+  if ($(window).width() <= 1000) {
+    slickify();
+  }
+
+  if ($(window).width() > 1000) {
+    unSlickify();
+  }
+
+  $(window).resize(function () {
+    if ($(window).width() <= 1000) {
+      slickify();
+    }
+    if ($(window).width() > 1000) {
+      unSlickify();
+    }
+  });
 
 
 });

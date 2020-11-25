@@ -40,25 +40,25 @@
       <h2 class="object-storage__subtitle">Храните контент рядом с клиентами в Европе, Азии и США</h2>
 
       <div class="object-storage__carousel">
-        <figure class="object-storage__carousel-item">
+        <figure class="object-storage__carousel-item js-carousel-item animate-delay-400 active" data-to-tab="tab1">
           <img src="./img/miami.jpg" alt="" class="object-storage__carousel-item-img">
           <figcaption class="object-storage__carousel-item-title">miami</figcaption>
           <!-- /.object-storage__carousel-item-title -->
         </figure>
         <!-- /.object-storage__carousel-item -->
-        <figure class="object-storage__carousel-item">
+        <figure class="object-storage__carousel-item js-carousel-item animate-delay-600" data-to-tab="tab2">
           <img src="./img/amsterdam.jpg" alt="" class="object-storage__carousel-item-img">
           <figcaption class="object-storage__carousel-item-title">amsterdam</figcaption>
           <!-- /.object-storage__carousel-item-title -->
         </figure>
         <!-- /.object-storage__carousel-item -->
-        <figure class="object-storage__carousel-item">
+        <figure class="object-storage__carousel-item js-carousel-item animate-delay-800" data-to-tab="tab3">
           <img src="./img/singapore.jpg" alt="" class="object-storage__carousel-item-img">
           <figcaption class="object-storage__carousel-item-title">singapore</figcaption>
           <!-- /.object-storage__carousel-item-title -->
         </figure>
         <!-- /.object-storage__carousel-item -->
-        <figure class="object-storage__carousel-item">
+        <figure class="object-storage__carousel-item js-carousel-item animate-delay-1000" data-to-tab="tab4">
           <img src="./img/luxembourg.jpg" alt="" class="object-storage__carousel-item-img">
           <figcaption class="object-storage__carousel-item-title">luxembourg</figcaption>
           <!-- /.object-storage__carousel-item-title -->
@@ -66,8 +66,10 @@
         <!-- /.object-storage__carousel-item -->
       </div><!-- /.object-storage__carousel -->
 
-      <div class="object-storage__info">
-        <div class="object-storage__info-box">
+
+      <div class="object-storage__info js-infobox-item active" data-tab="tab1">
+
+        <div class="object-storage__info-box object-storage__info-box_left">
           <h3 class="object-storage__info-title">SFTP хранилище в Амстердаме, Сингапуре и Майами </h3>
           <ul class="object-storage__info-list">
             <li class="object-storage__info-item">Поддержка протоколов SFTP и SSH</li>
@@ -75,7 +77,7 @@
             <li class="object-storage__info-item">Гибкая синхронизация Rsync</li>
           </ul>
         </div>
-        <div class="object-storage__info-box">
+        <div class="object-storage__info-box object-storage__info-box_right">
           <h3 class="object-storage__info-title">S3 хранилище в Люксембурге, Амстердаме, на Востоке и Западе США </h3>
           <ul class="object-storage__info-list">
             <li class="object-storage__info-item">Не нужно вносить изменения в S3-совместимое приложение</li>
@@ -83,7 +85,72 @@
             <li class="object-storage__info-item">Время ответа сервера в пределах 15 мс</li>
           </ul>
         </div>
-      </div>
+
+      </div><!-- /.object-storage__info -->
+
+      <div class="object-storage__info js-infobox-item" data-tab="tab2">
+
+        <div class="object-storage__info-box object-storage__info-box_left">
+          <h3 class="object-storage__info-title">SFTP хранилище в Амстердаме, Сингапуре и Майами </h3>
+          <ul class="object-storage__info-list">
+            <li class="object-storage__info-item">Поддержка протоколов SFTP и SSH</li>
+            <li class="object-storage__info-item">Подключение по публичному SSH-ключу или паролю</li>
+            <li class="object-storage__info-item">Гибкая синхронизация Rsync</li>
+          </ul>
+        </div>
+        <div class="object-storage__info-box object-storage__info-box_right">
+          <h3 class="object-storage__info-title">S3 хранилище в Люксембурге, Амстердаме, на Востоке и Западе США </h3>
+          <ul class="object-storage__info-list">
+            <li class="object-storage__info-item">Не нужно вносить изменения в S3-совместимое приложение</li>
+            <li class="object-storage__info-item">Защита от случайного удаления, ошибок софта и вредоносных ботов</li>
+            <li class="object-storage__info-item">Время ответа сервера в пределах 15 мс</li>
+          </ul>
+        </div>
+      
+      </div><!-- /.object-storage__info -->
+
+      <div class="object-storage__info js-infobox-item" data-tab="tab3">
+
+        <div class="object-storage__info-box object-storage__info-box_left">
+          <h3 class="object-storage__info-title">SFTP хранилище в Амстердаме, Сингапуре и Майами </h3>
+          <ul class="object-storage__info-list">
+            <li class="object-storage__info-item">Поддержка протоколов SFTP и SSH</li>
+            <li class="object-storage__info-item">Подключение по публичному SSH-ключу или паролю</li>
+            <li class="object-storage__info-item">Гибкая синхронизация Rsync</li>
+          </ul>
+        </div>
+        <div class="object-storage__info-box object-storage__info-box_right">
+          <h3 class="object-storage__info-title">S3 хранилище в Люксембурге, Амстердаме, на Востоке и Западе США </h3>
+          <ul class="object-storage__info-list">
+            <li class="object-storage__info-item">Не нужно вносить изменения в S3-совместимое приложение</li>
+            <li class="object-storage__info-item">Защита от случайного удаления, ошибок софта и вредоносных ботов</li>
+            <li class="object-storage__info-item">Время ответа сервера в пределах 15 мс</li>
+          </ul>
+        </div>
+
+      </div><!-- /.object-storage__info -->
+
+      <div class="object-storage__info js-infobox-item" data-tab="tab4">
+
+        <div class="object-storage__info-box object-storage__info-box_left">
+          <h3 class="object-storage__info-title">SFTP хранилище в Амстердаме, Сингапуре и Майами </h3>
+          <ul class="object-storage__info-list">
+            <li class="object-storage__info-item">Поддержка протоколов SFTP и SSH</li>
+            <li class="object-storage__info-item">Подключение по публичному SSH-ключу или паролю</li>
+            <li class="object-storage__info-item">Гибкая синхронизация Rsync</li>
+          </ul>
+        </div>
+        <div class="object-storage__info-box object-storage__info-box_right">
+          <h3 class="object-storage__info-title object-storage__info-box_right">S3 хранилище в Люксембурге, Амстердаме, на Востоке и Западе США </h3>
+          <ul class="object-storage__info-list">
+            <li class="object-storage__info-item">Не нужно вносить изменения в S3-совместимое приложение</li>
+            <li class="object-storage__info-item">Защита от случайного удаления, ошибок софта и вредоносных ботов</li>
+            <li class="object-storage__info-item">Время ответа сервера в пределах 15 мс</li>
+          </ul>
+        </div>
+
+      </div><!-- /.object-storage__info -->
+      
 
       <button class="object-storage__more-btn">Подробнее о хранилище</button>
 
