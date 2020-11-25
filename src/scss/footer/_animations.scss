@@ -5,41 +5,83 @@
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
+
 /**
  * ----------------------------------------
  * animation roll-in-blurred-right
  * ----------------------------------------
  */
- @-webkit-keyframes roll-in-blurred-right {
-        0% {
-          -webkit-transform: translateX(1000px) rotate(720deg);
-                  transform: translateX(1000px) rotate(720deg);
-          -webkit-filter: blur(50px);
-                  filter: blur(50px);
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: translateX(0) rotate(0deg);
-                  transform: translateX(0) rotate(0deg);
-          -webkit-filter: blur(0);
-                  filter: blur(0);
-          opacity: 1;
-        }
-      }
-      @keyframes roll-in-blurred-right {
-        0% {
-          -webkit-transform: translateX(1000px) rotate(720deg);
-                  transform: translateX(1000px) rotate(720deg);
-          -webkit-filter: blur(50px);
-                  filter: blur(50px);
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: translateX(0) rotate(0deg);
-                  transform: translateX(0) rotate(0deg);
-          -webkit-filter: blur(0);
-                  filter: blur(0);
-          opacity: 1;
-        }
-      }
-      
+
+// animation: roll-in-blurred-right 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+
+@-webkit-keyframes roll-in-blurred-right {
+    0% {
+        -webkit-transform: translateX(1000px) rotate(720deg);
+        transform: translateX(1000px) rotate(720deg);
+        -webkit-filter: blur(50px);
+        filter: blur(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes roll-in-blurred-right {
+    0% {
+        -webkit-transform: translateX(1000px) rotate(720deg);
+        transform: translateX(1000px) rotate(720deg);
+        -webkit-filter: blur(50px);
+        filter: blur(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+
+
+//animation: scale-bounce 1000ms linear both;
+
+/* Generated with Bounce.js. Edit at http://bouncejs.com#%7Bs%3A%5B%7BT%3A%22c%22%2Ce%3A%22b%22%2Cd%3A1000%2CD%3A0%2Cf%3A%7Bx%3A1%2Cy%3A1%7D%2Ct%3A%7Bx%3A2%2Cy%3A3%7D%2Cs%3A1%2Cb%3A16%7D%5D%7D */
+
+@keyframes scale-bounce {
+        0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        1.5% { transform: matrix3d(1.073, 0, 0, 0, 0, 1.073, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        2.9% { transform: matrix3d(1.189, 0, 0, 0, 0, 1.189, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        4.4% { transform: matrix3d(1.294, 0, 0, 0, 0, 1.294, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        5.81% { transform: matrix3d(1.328, 0, 0, 0, 0, 1.328, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        7.31% { transform: matrix3d(1.292, 0, 0, 0, 0, 1.292, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        8.81% { transform: matrix3d(1.215, 0, 0, 0, 0, 1.215, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        10.31% { transform: matrix3d(1.146, 0, 0, 0, 0, 1.146, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        11.81% { transform: matrix3d(1.12, 0, 0, 0, 0, 1.12, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        13.41% { transform: matrix3d(1.143, 0, 0, 0, 0, 1.143, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        14.91% { transform: matrix3d(1.192, 0, 0, 0, 0, 1.192, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        16.42% { transform: matrix3d(1.235, 0, 0, 0, 0, 1.235, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        17.92% { transform: matrix3d(1.251, 0, 0, 0, 0, 1.251, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        21.02% { transform: matrix3d(1.204, 0, 0, 0, 0, 1.204, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        24.02% { transform: matrix3d(1.168, 0, 0, 0, 0, 1.168, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        27.03% { transform: matrix3d(1.197, 0, 0, 0, 0, 1.197, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        30.03% { transform: matrix3d(1.22, 0, 0, 0, 0, 1.22, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        36.14% { transform: matrix3d(1.187, 0, 0, 0, 0, 1.187, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        42.14% { transform: matrix3d(1.208, 0, 0, 0, 0, 1.208, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        48.25% { transform: matrix3d(1.195, 0, 0, 0, 0, 1.195, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        54.35% { transform: matrix3d(1.203, 0, 0, 0, 0, 1.203, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        60.36% { transform: matrix3d(1.198, 0, 0, 0, 0, 1.198, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        66.47% { transform: matrix3d(1.201, 0, 0, 0, 0, 1.201, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        72.47% { transform: matrix3d(1.199, 0, 0, 0, 0, 1.199, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        78.58% { transform: matrix3d(1.201, 0, 0, 0, 0, 1.201, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        84.68% { transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        90.69% { transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        96.8% { transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        100% { transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }  
+}
